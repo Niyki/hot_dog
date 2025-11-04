@@ -15,9 +15,6 @@ enum Route {
 }
 
 fn main() {
-    #[cfg(not(feature = "server"))]
-    dioxus::fullstack::set_server_url("https://hot-dog.fly.dev");
-
     dioxus::launch(app);
 }
 
